@@ -368,3 +368,14 @@
         .dest-track { animation: none; }
         .dest-carousel { overflow-x: auto; }
       }
+
+      /* Success Stories */
+      .stories-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+      @media (max-width: 900px) { .stories-grid { grid-template-columns: repeat(2, 1fr); } }
+      @media (max-width: 600px) { .stories-grid { grid-template-columns: 1fr; } }
+      .story-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+      .story-card img { width: 100%; height: auto; }
+      .story-body { padding: 20px 22px 24px; }
+      .story-country { display: inline-block; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.02em; color: var(--plum-soft); background: var(--gold-pale); border-radius: 999px; padding: 4px 12px; margin-bottom: 10px; }
+      .story-body h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; }
+      .story-body p { margin: 0; color: var(--ink-soft); font-size: 0.97rem; }
