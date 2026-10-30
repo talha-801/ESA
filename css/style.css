@@ -397,6 +397,7 @@
       .float-contact a:hover { background: rgba(227,170,60,0.22); color: var(--gold-bright); }
       .float-contact svg { width: 22px; height: 22px; fill: currentColor; flex: none; transition: transform 0.2s ease; }
       .float-contact a:hover svg { transform: scale(1.15); }
+      .float-contact a.float-email { display: none; }
       .float-contact .label {
         max-width: 0; overflow: hidden; white-space: nowrap;
         font-family: "Sora", sans-serif; font-size: 0.85rem; font-weight: 700;
@@ -414,6 +415,7 @@
           animation: none;
         }
         .float-contact a { padding: 8px; }
+        .float-contact a.float-email { display: flex; }
         .float-contact svg { width: 20px; height: 20px; }
         .float-contact a:hover .label { max-width: 0; margin-left: 0; }
       }
